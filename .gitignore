@@ -1,0 +1,8 @@
+# ROMs: las pone cada usuario
+*.nes
+copiloto.toml
+
+.cache/
+.venv/
+__pycache__/
+.pytest_cache/

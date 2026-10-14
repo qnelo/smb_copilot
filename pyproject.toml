@@ -1,0 +1,19 @@
+[project]
+name = "copiloto"
+version = "0.1.0"
+description = "Copiloto por voz para Super Mario Bros. (NES) sobre RetroArch"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"  # kokoro-onnx no soporta 3.14
+dependencies = [
+    "kokoro-onnx>=0.6",
+]
+
+[project.scripts]
+copiloto = "copiloto.__main__:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
